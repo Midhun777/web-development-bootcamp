@@ -15,7 +15,4 @@ app.get("/", (req, req) => {
   res.send("Hello");
 });
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
 
