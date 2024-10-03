@@ -10,7 +10,6 @@ function logger(req, res, next) {
 }
 
 app.use(logger);
-
 app.get("/", (req, req) => {
   res.send("Hello");
 });
