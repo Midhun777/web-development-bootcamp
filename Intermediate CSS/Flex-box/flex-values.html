@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Workshop</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    margin-top: 30px;
+}
+
+.card {
+    height: 40px;
+    width: 120px;
+    border: 2px solid rebeccapurple;
+    flex:1;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.first{
+    flex:1;
+}
+
+.second{
+    flex:2;
+}
+
+.third{
+    flex: 3;
+}
+
+.grid{
+    display: grid;
+}
+
+.child{
+    height: 40px;
+    width: 120px;
+    border: 2px solid rebeccapurple;
+}
+
+    </style>
+    </head>
+    <body>
+        <br>
+        <p>The value of flex means the elems should have n times size of the
+            other elems "n means the value we are entering in flex".</p>
+        <div class="parent">
+            <div class="card first">1</div>
+            <div class="card second">2</div>
+            <div class="card third">3</div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <br><br><br>
+        <div class="grid">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </body>
+</html>

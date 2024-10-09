@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        flex
+    </title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .parent{
+            margin-top:40px ;
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid teal;
+        }
+
+        .parent > *{
+            /* height:250px; */
+            flex-basis: 100px;
+            border: 1px solid orchid;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">qwer</div>
+        <div class="card">qwert</div>
+        <div class="card">qwertyu</div>
+        <div class="card">qwe</div>
+        <div class="card">qwert</div>
+    </div>
+</body>
+</html>

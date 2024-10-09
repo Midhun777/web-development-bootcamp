@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Query</title>
+        <style>
+          body{
+            margin: 0;
+             padding: 0;
+        }
+
+        body{
+            background: cyan;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+        }
+
+        @media(min-width:319px)and (max-width:480px)  {
+            body{
+                background: lightsalmon;
+            }
+        }
+
+        @media(min-width:481px)and (max-width:1200px)  {
+            body{
+                background: powderblue;
+            }
+        }
+
+        @media(min-width:1201px)and (max-width:1600px)  {
+            body{
+                background: limegreen;
+            }
+        }
+
+        @media(min-width:1601px) {
+            body{
+                background: seagreen;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <!-- <p>This is responsive</p> -->
+        </div>
+    </body>
+</html>
