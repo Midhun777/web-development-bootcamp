@@ -1,0 +1,1 @@
+use flex direction column when using media query for phone design .
