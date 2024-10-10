@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Sizing</title>
+    <style>
+        body,p{
+            padding:0px;
+            margin:0px;
+            /* box-sizing: border-box; */
+        }
+
+        .cont{
+            display: flex;
+        }
+
+        .text{
+            border: 3px solid tomato;
+        }
+
+        .max{
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <p class="text">text 1</p>
+        <p class="text">text text</p>
+        <p class="text">text 2</p>
+        <p class="text max">this is a long text to test flex sizing</p>
+    </div>
+</body>
+</html>
