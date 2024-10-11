@@ -15,8 +15,12 @@
                 max-width:800px ;
                 max-height:800px ;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                /* grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+                /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+                /* minmax(400px,800px) */
+                grid-template-columns: repeat(8,1fr);
+                grid-template-rows: repeat(8,1fr);
             }
         .parent div{
             width: 100px;
