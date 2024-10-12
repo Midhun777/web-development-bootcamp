@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h3>Welcome to Javascript</h3>
+        <script>
+        var tweet = prompt("Your Text here : ");
+        console.log(tweet)
+        var Tlength = tweet.length; 
+        alert("Your Text is " + Tlength + " characters long and only " + (140-Tlength)+ " characters left.")
+        console.log(tweet.length)
+        tweet = tweet.slice(0,140)
+        console.log(tweet)
+        console.log(tweet.length)
+    </script>
+    </body>
+</html>
