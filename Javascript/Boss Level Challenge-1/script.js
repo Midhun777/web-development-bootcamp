@@ -1,11 +1,11 @@
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
+
 var result = document.getElementById("result");
 var buttonRandom = document.getElementById("buttonRandom");
 
 var randomNo1;
 var randomNo2;
-
 
 function generateImage() {
     if (randomNo1 === 1) {
