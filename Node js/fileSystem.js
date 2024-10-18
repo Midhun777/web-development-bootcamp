@@ -1,6 +1,6 @@
 const fs = require('node:fs');
 
-const content = 'Some content!';
+const content = 'Hello from Node!';
 
 fs.writeFile('test.txt', content, err => {
     if (err) {
@@ -9,3 +9,6 @@ fs.writeFile('test.txt', content, err => {
         console.log("sucessfully written!");
     }
 });
+
+
+
