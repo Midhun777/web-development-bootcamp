@@ -7,12 +7,17 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
-app.use(morgan("combined"));
+// app.use(morgan("combined"));
+app.use(morgan("tiny"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// app.get("/", (req, res) => {
+//   res.sendFile(__dirname + "/public/index.html");
+// });
+
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.send("<p>hello</p>");
 });
 
 app.post("/submit", (req, res) => {
