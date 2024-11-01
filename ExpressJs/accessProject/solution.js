@@ -9,15 +9,16 @@ const port = 3000;
 
 var userIsAuthorised = false;
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 function passwordCheck(req, res, next) {
   const password = req.body["password"];
-  if (password === "ILoveProgramming") {
+  if (password == "admin") {
     userIsAuthorised = true;
   }
   next();
 }
+
 app.use(passwordCheck);
 
 app.get("/", (req, res) => {
@@ -29,9 +30,10 @@ app.post("/check", (req, res) => {
     res.sendFile(__dirname + "/public/secret.html");
   } else {
     res.sendFile(__dirname + "/public/index.html");
-    //Alternatively res.redirect("/");
   }
 });
+
+userIsAuthorised = false;
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
