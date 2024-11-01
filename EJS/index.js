@@ -1,8 +1,6 @@
 import express from "express";
 import ejs from "ejs"
 
-
-
 const dayName = new Date();
 const day = dayName.getDay()
 
