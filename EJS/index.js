@@ -1,9 +1,20 @@
 import express from "express";
 import ejs from "ejs"
+import exp from "constants";
 
-const dayName = new Date();
-const day = dayName.getDay()
+const app = express();
+const PORT = 3000;
 
-console.log(day);
-console.log(day);
-console.log(day);
+app.listen(PORT,()=>{
+    console.log(`Listening on ${PORT}`)
+})
+
+
+
+
+
+
+
+
+// const dayName = new Date();
+// const day = dayName.getDay()
