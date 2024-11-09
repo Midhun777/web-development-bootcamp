@@ -1,6 +1,6 @@
 import express from "express";
 import ejs from "ejs"
-impkkjhkjhkjhkjhjhort exp from "constants";
+import exp from "constants";
 
 const app = express();
 const PORT = 3000;
