@@ -9,3 +9,5 @@ app.listen(PORT,()=>{
     console.log(`Listening on ${PORT}`)
 }) 
 
+const dayName = new Date();
+const day = dayName.getDay()
