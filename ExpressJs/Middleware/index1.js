@@ -5,10 +5,10 @@ import bodyParser from "body-parser";
 import morgan, { compile } from "morgan";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const app = express();
-const port = 3000;
-// app.use(morgan("combined"));
-app.use(morgan("tiny"));
+// const app = express();
+// const port = 3000;
+// // app.use(morgan("combined"));
+// app.use(morgan("tiny"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
