@@ -12,6 +12,9 @@ app.use(morgan("tiny"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
 
 app.get("/", (req, res) => {
   res.send("<p>hello</p>");
