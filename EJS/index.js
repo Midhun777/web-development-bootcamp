@@ -1,13 +1,30 @@
 import express from "express";
-import ejs from "ejs"
-import exp from "constants";
 
 const app = express();
 const PORT = 3000;
+let type;
+let adv;
 
-app.listen(PORT,()=>{
-    console.log(`Listening on ${PORT}`)
-}) 
+app.get("/", (req, res) => {
+    const today = new Date();
+    const day = today.getDay();
+    console.log(day);
 
-const dayName = new Date();
-const day = dayName.getDay()
+    if (day == 0 || day == 6) {
+        type = "the weekend";
+        adv = "have some fun!";
+    } else {
+        type = "a week day";
+        adv = "Time to work hard!";
+    }
+
+    res.render("index.ejs", {
+        dayType: type,
+        advice: adv
+    });
+});
+
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`)
+}
+)
