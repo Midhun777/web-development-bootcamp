@@ -7,7 +7,6 @@ CREATE TABLE EmployeeProjects (
     FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
 );
 
--- Sample Data
 INSERT INTO EmployeeProjects (EmployeeID, ProjectID, AssignmentDate)
 VALUES
 (1, 1, '2023-02-15'),
